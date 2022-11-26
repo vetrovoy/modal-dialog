@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./modal.css">
+</head>
+<body>
+  <button data-modal-toggle="modal-1">
+    show modal 1
+  </button>
+
+  <div class="modal" data-modal="modal-1">
+    modal 1
+
+    <button data-modal-toggle="modal-2">
+      show modal 2
+    </button>
+
+    <button id="hide-1">
+      hide modal 1
+    </button>
+  </div>
+
+  <div class="modal" data-modal="modal-2">
+    modal 2
+    <button data-modal-toggle="modal-3">
+      show modal 3
+    </button>
+    <button id="hide-2">
+      hide modal 2
+    </button>
+  </div>
+
+  <div class="modal" data-modal="modal-3">
+    hello!
+  </div>
+</body>
+<script src="./modal.js"></script>
+</html>
